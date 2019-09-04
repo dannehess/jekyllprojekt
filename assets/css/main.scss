@@ -50,6 +50,7 @@ nav{
     background-color: #fefefe;
     display: flex;
     padding-right: 54px;
+    margin-top: 4px;
     justify-content: flex-end;
 }
 
@@ -57,14 +58,14 @@ nav a{
     display: inline-block;
     font-size: 1.3rem;
     font-family: 'Montserrat', sans-serif;
-    padding: 14px 0px;
+    padding: 10px 10px;
     margin-right: 4px;
     margin-left: 50px;
     color: #333;
     text-decoration: none;
     background-size: 100% 200%;
     background-position: top;
-    transition: background-position 0.5s ease-in-out;
+    transition: background-position 0.3s ease-in-out;
 }
 
 nav a:hover{

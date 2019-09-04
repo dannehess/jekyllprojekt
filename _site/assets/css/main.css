@@ -65,6 +65,7 @@ nav {
   display: -ms-flexbox;
   display: flex;
   padding-right: 54px;
+  margin-top: 4px;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
@@ -74,11 +75,31 @@ nav a {
   display: inline-block;
   font-size: 1.3rem;
   font-family: 'Montserrat', sans-serif;
-  padding: 14px 0px;
+  padding: 10px 10px;
   margin-right: 4px;
   margin-left: 50px;
   color: #333;
   text-decoration: none;
+  background-size: 100% 200%;
+  background-position: top;
+  -webkit-transition: background-position 0.3s ease-in-out;
+  transition: background-position 0.3s ease-in-out;
+}
+
+nav a:hover {
+  background-position: bottom;
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(50%, #3261ad), color-stop(50%, transparent));
+  background-image: linear-gradient(to top, #3261ad 50%, transparent 50%);
+}
+
+nav a:nth-child(2):hover {
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(50%, #f10736), color-stop(50%, transparent));
+  background-image: linear-gradient(to top, #f10736 50%, transparent 50%);
+}
+
+nav a:nth-child(3):hover {
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(50%, #ee3e82), color-stop(50%, transparent));
+  background-image: linear-gradient(to top, #ee3e82 50%, transparent 50%);
 }
 
 .logo {
