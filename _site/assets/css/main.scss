@@ -1,3 +1,4 @@
+/* Global Start */
 
 body, html{
     font-family: 'Montserrat';
@@ -94,27 +95,14 @@ section{
     background-color: #f9f9f9;
 }
 
+/* Global end */
+
+/* Merchandise section start */
+
 .merchandise{
     background-color: #fff;
     margin-bottom: 40px;
     padding-left: 40px;
-}
-
-h1{
-    font-size: 3rem;
-    line-height: 30px;
-}
-
-.logotype{
-    width: 30%;
-}
-
-footer{
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.2em;
 }
 
 .items{
@@ -135,6 +123,25 @@ display: flex;
 flex-direction: row;
 justify-content: space-around;
 flex-wrap: wrap;
+}
+
+/* Merchandise section end */
+
+h1{
+    font-size: 3rem;
+    line-height: 30px;
+}
+
+.logotype{
+    width: 30%;
+}
+
+footer{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
 }
 
 .underheading{

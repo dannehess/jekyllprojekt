@@ -1,3 +1,4 @@
+/* Global Start */
 body, html {
   font-family: 'Montserrat';
   margin: 0;
@@ -120,33 +121,12 @@ section {
   background-color: #f9f9f9;
 }
 
+/* Global end */
+/* Merchandise section start */
 .merchandise {
   background-color: #fff;
   margin-bottom: 40px;
   padding-left: 40px;
-}
-
-h1 {
-  font-size: 3rem;
-  line-height: 30px;
-}
-
-.logotype {
-  width: 30%;
-}
-
-footer {
-  padding: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-size: 1.2em;
 }
 
 .items {
@@ -177,6 +157,30 @@ footer {
       flex-wrap: wrap;
 }
 
+/* Merchandise section end */
+h1 {
+  font-size: 3rem;
+  line-height: 30px;
+}
+
+.logotype {
+  width: 30%;
+}
+
+footer {
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.2em;
+}
+
 .underheading {
   margin-left: 50px;
   margin-top: 40px;
@@ -198,4 +202,17 @@ footer {
   padding: 10px 0;
   text-align: center;
 }
+
+/* Biography section start */
+
+
+/* Biography section end */
+
+/* Discography section start */
+
+
+/* Discography section end */
+
+
+
 /*# sourceMappingURL=main.css.map */
