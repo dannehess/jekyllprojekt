@@ -82,14 +82,14 @@ nav a {
   text-decoration: none;
   background-size: 100% 200%;
   background-position: top;
-  -webkit-transition: background-position 0.3s ease-in-out;
-  transition: background-position 0.3s ease-in-out;
+  -webkit-transition: background-position 0.4s ease-in-out;
+  transition: background-position 0.4s ease-in-out;
 }
 
 nav a:hover {
   background-position: bottom;
-  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(50%, #3261ad), color-stop(50%, transparent));
-  background-image: linear-gradient(to top, #3261ad 50%, transparent 50%);
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(50%, #6088c8), color-stop(50%, transparent));
+  background-image: linear-gradient(to top, #6088c8 50%, transparent 50%);
 }
 
 nav a:nth-child(2):hover {

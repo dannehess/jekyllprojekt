@@ -65,12 +65,12 @@ nav a{
     text-decoration: none;
     background-size: 100% 200%;
     background-position: top;
-    transition: background-position 0.3s ease-in-out;
+    transition: background-position 0.4s ease-in-out;
 }
 
 nav a:hover{
     background-position: bottom;
-    background-image: linear-gradient(to top, #3261ad 50%, transparent 50%);
+    background-image: linear-gradient(to top, #6088c8 50%, transparent 50%);
 }
 
 
