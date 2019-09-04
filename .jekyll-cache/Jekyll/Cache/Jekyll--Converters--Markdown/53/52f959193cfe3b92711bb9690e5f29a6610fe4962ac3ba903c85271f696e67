@@ -1,0 +1,13 @@
+I"\<h2 id="youre-ready-to-go">You’re ready to go!</h2>
+
+<p>Start developing your Jekyll website.</p>
+
+<header>
+    <span class="logo"><img class="logotype" src="logo.png" /></span>
+    <nav>
+        <a href="#biography">Biography</a>
+        <a href="#discography">Discography</a>
+        <a href="#merchandise">Merchandise</a>
+    </nav>
+</header>
+:ET

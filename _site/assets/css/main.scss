@@ -1,0 +1,154 @@
+
+body, html{
+    font-family: 'Montserrat';
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.container{
+    display: flex;
+    align-items: stretch;
+}
+
+header{
+    max-width: 75vw;
+    padding: 10px 0px 10px 0px;
+    background: #fefefe;
+    display: flex;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.left{
+    max-width: 75vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.bowie{
+    width: 25vw;
+    min-height: 100%;
+    display: flex;
+    background-image: url(../../assets/images/ziggy.jpg);
+    background-color: #fefefe;
+    background-repeat: no-repeat, no-repeat;
+    background-position: top -80px right -120px;
+    background-attachment: fixed;
+    background-size: 110vh;
+}
+
+nav{
+    height: 100%;
+    width: 80%;
+    background-color: #fefefe;
+    display: flex;
+    padding-right: 54px;
+    justify-content: flex-end;
+}
+
+nav a{
+    display: inline-block;
+    font-size: 1.3rem;
+    font-family: 'Montserrat', sans-serif;
+    padding: 14px 0px;
+    margin-right: 4px;
+    margin-left: 50px;
+    color: #333;
+    text-decoration: none;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    color: #333;
+}
+
+p{
+  font-family: 'Montserrat', sans-serif;
+  color: #1a1a1d;
+  font-size: 1.2rem;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  line-height: 35px;
+}
+
+main{
+    display: flex;
+    padding-left: 60px;
+    padding-right: 0px;
+    margin-top: 130px;
+    flex-direction: column;
+    word-break: break-all;
+}
+
+section{
+    padding: 10px 40px;
+    margin-bottom: 40px;
+    background-color: #f9f9f9;
+}
+
+.merchandise{
+    background-color: #fff;
+    margin-bottom: 40px;
+    padding-left: 40px;
+}
+
+h1{
+    font-size: 3rem;
+    line-height: 30px;
+}
+
+.logotype{
+    width: 30%;
+}
+
+footer{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+}
+
+.items{
+    display: flex;
+}
+
+.item{
+    width: 200px;
+}
+
+
+.item img{
+    width: 100%;
+}
+
+.flex {
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+flex-wrap: wrap;
+}
+
+.underheading{
+margin-left: 50px;
+margin-top: 40px;
+font-size: 2rem;
+}
+
+.info{
+display: flex;
+position: relative;
+bottom: 20px;
+justify-content: center;
+align-items: center;
+padding: 10px 0;
+text-align: center;
+}
