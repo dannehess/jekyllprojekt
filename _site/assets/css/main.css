@@ -158,6 +158,16 @@ section {
 }
 
 /* Merchandise section end */
+/* Disc section start */
+.disc {
+  background-color: #fff;
+  margin-bottom: 40px;
+  padding-left: 40px;
+}
+
+/* Disc section end */
+/* Bio section start */
+/* Bio section end */
 h1 {
   font-size: 3rem;
   line-height: 30px;
@@ -202,17 +212,4 @@ footer {
   padding: 10px 0;
   text-align: center;
 }
-
-/* Biography section start */
-
-
-/* Biography section end */
-
-/* Discography section start */
-
-
-/* Discography section end */
-
-
-
 /*# sourceMappingURL=main.css.map */
