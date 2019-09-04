@@ -158,6 +158,14 @@ section {
 }
 
 /* Merchandise section end */
+/* Disc section start */
+.disc {
+  background-color: #fff;
+  margin-bottom: 40px;
+  padding-left: 40px;
+}
+
+/* Disc section end */
 h1 {
   font-size: 3rem;
   line-height: 30px;
