@@ -171,6 +171,30 @@ flex-wrap: wrap;
 
 
 /* Bio section start */
+.bio{
+    background-color: #fff;
+}
+
+.qfacts{
+    font-family: 'Montserrat';
+    display: flex;
+    margin: 0em;
+    margin-bottom: 10px;
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.bioimg{
+        width: 200px;
+        margin: 10px 10px 0px 5px;
+        float: left;
+        opacity: 0.8;
+        border-radius: 8px;
+}
+
+.biotext{
+    display: inline;
+}
 
 
 /* Bio section end */
