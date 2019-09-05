@@ -30,3 +30,5 @@ document.addEventListener("DOMContentLoaded", () => {
         easing: 'easeInOutSine'
       })
   });
+
+  let copyyear = document.querySelector('#copyyear').innerHTML = new Date().getFullYear();
