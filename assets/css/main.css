@@ -192,7 +192,10 @@ section {
 .disc {
   background-color: #fff;
   margin-bottom: 40px;
-  padding-left: 40px;
+}
+
+#sixt-sevent-list, #eighti-nineti-list, #millen-list {
+  display: none;
 }
 
 /* Disc section end */
