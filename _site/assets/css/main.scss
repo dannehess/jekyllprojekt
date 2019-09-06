@@ -160,8 +160,15 @@ flex-wrap: wrap;
     margin-bottom: 40px;
 }
 
-#sixt-sevent-list, #eighti-nineti-list, #millen-list{
-    display: none;
+.invisible{
+	height: 0;
+	overflow: hidden;
+	transition: height 350ms ease-in-out;
+}
+
+.visible{
+    display: block;
+	height: auto;
 }
 
 

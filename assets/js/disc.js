@@ -1,14 +1,29 @@
 let app = {};
 
+
+
 function showDiscFunc(){
-    
+    let selectSixtLi = document.getElementsByClassName("sixt-sevent-li");
+    console.log(selectSixtLi);
+    for (let i = 0; i < selectSixtLi.length; i++) {
+
+        if (selectSixtLi[i].classList.contains("invisible")){
+        selectSixtLi[i].classList.add("visible");
+        selectSixtLi[i].classList.remove("invisible");
+        }else{
+            selectSixtLi[i].classList.remove("visible");
+            selectSixtLi[i].classList.add("invisible");
+            
+        }
+        
+    }
 
 }
 
-app.selectElementSixt = document.getElementsByid("disch2-sixt-sevent");
-app.selectElementEighti = document.getElementsByid("disch2-eighti-nineti");
-app.selectElementMillen = document.getElementsByid("disch2-millen-list");
+let selectSixtUl = document.getElementById("sixt-sevent-ul");
+// app.selectElementEighti = document.getElementsByid("disch2-eighti-nineti");
+// app.selectElementMillen = document.getElementsByid("disch2-millen-list");
 
-app.selectElementSixt.addEventListenerFunction("click", showDiscFunc)
-app.selectElementEight.addEventListenerFunction("click", showDiscFunc)
-app.selectElementMillen.addEventListenerFunction("click", showDiscFunc)
+selectSixtUl.addEventListener("click", showDiscFunc, false)
+// app.selectElementEight.addEventListenerFunction("click", showDiscFunc)
+// app.selectElementMillen.addEventListenerFunction("click", showDiscFunc)

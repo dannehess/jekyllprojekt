@@ -194,8 +194,12 @@ section {
   margin-bottom: 40px;
 }
 
-#sixt-sevent-list, #eighti-nineti-list, #millen-list {
+.invisible {
   display: none;
+}
+
+.visible {
+  display: block;
 }
 
 /* Disc section end */
