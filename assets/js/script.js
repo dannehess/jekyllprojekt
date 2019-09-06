@@ -31,6 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
       })
   });
 
+
   let copyyear = document.querySelector('#copyyear').innerHTML = new Date().getFullYear();
 
   $(document).ready(function(){
@@ -47,6 +48,28 @@ document.addEventListener("DOMContentLoaded", () => {
           panel.style.display = "block";
           panel.classList.add('active');
     }
+
+    $(document).on('scroll', function(){
+      if ($(window).scrollTop() > 55){
+         $('.panel').hide();
+      }
+   });
+
+   $(document).on('scroll', function(){
+    if ($(window).scrollTop() > 200){
+       $('.panel').css('width', '100%');
+    }
+
+
+    if ($(window).scrollTop() < 180){
+      $('.panel').css('width', 'auto');
+   }
+ });
+
+    panel.addEventListener('click', () => {
+      panel.style.display = "none";
+    });
+
   });
 }
 
@@ -56,4 +79,23 @@ $(window).resize(function() {
   }
  else {}
 });
+
+
+});
+
+/* Funktion som visar "back-to-top"-pilen nÃ¤r man Ã¤r 200px frÃ¥n toppen */
+let arrow = document.querySelector("#back-to-top");
+let topsection = document.querySelector(".container");
+let smalltopheader = document.querySelector("#smalltopheader");
+
+window.addEventListener("scroll", () => {
+  let rect = topsection.getBoundingClientRect();
+  window.innerHeight - rect.top > window.innerHeight + 200
+    ? (arrow.style.display = "flex")
+    : (arrow.style.display = "none");
+
+    window.innerHeight - rect.top > window.innerHeight + 416
+    ? (smalltopheader.style.display = "flex")
+    : (smalltopheader.style.display = "none");
+
 });
