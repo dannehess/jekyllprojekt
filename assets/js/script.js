@@ -88,6 +88,8 @@ let arrow = document.querySelector("#back-to-top");
 let topsection = document.querySelector(".container");
 let smalltopheader = document.querySelector("#smalltopheader");
 
+smalltopheader.style.display = "none"
+
 window.addEventListener("scroll", () => {
   let rect = topsection.getBoundingClientRect();
   window.innerHeight - rect.top > window.innerHeight + 200
