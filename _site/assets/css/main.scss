@@ -16,7 +16,7 @@ body, html{
 
 header{
     width: 75%;
-    padding: 10px 0px 10px 0px;
+    padding: 10px 0px 20px 0px;
     background: #fefefe;
     display: flex;
     position: fixed;
@@ -58,7 +58,7 @@ nav{
     align-items: flex-end;
 }
 
-nav a{
+nav a, .panel li a{
     display: inline-block;
     font-size: 1.3rem;
     font-family: 'Montserrat', sans-serif;
@@ -72,16 +72,16 @@ nav a{
     transition: background-position 0.4s ease-in-out;
 }
 
-nav a:hover{
+nav a:hover, .panel li a:hover{
     background-position: bottom;
     background-image: linear-gradient(to top, #6088c8 50%, transparent 50%);
 }
 
-nav a:nth-child(2):hover{
+nav a:nth-child(2):hover, .panel li > a:nth-child(2):hover{
     background-image: linear-gradient(to top, #f10736 50%, transparent 50%);
 }
 
-nav a:nth-child(3):hover{
+nav a:nth-child(3):hover, .panel li a:nth-child(3):hover{
     background-image: linear-gradient(to top, #ee3e82 50%, transparent 50%);
 }
 
@@ -210,7 +210,37 @@ text-align: center;
 
 .smallheader{
     display: none;
+    background: #fefefe;
 }
+
+/* Hamburgermenu Start */
+
+.active{
+    z-index: 1;
+    }
+
+    .panel ul{
+        list-style-type: none;
+        margin-top: 40px;
+    }
+    
+    .panel li a{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: inline-block;
+    padding: 14px 18px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    color: #1a1a1d;
+    font-size: 1.8rem;
+    text-decoration: none;
+    text-align: center;
+    }
+    
+    .accordion, .panel{
+    display: none;
+    }
+
+/* Hamburgermenu End */
 
 @media(max-width:1400px){
   
@@ -252,28 +282,55 @@ text-align: center;
         padding: 0;
     }
 
-    .hamburger{
-        position: fixed;
-        top: 35px;
-        left: 10px;
-        display: inline-block;
-        padding: 0px 10px;
-        font-size: 3rem;
-        line-height: 0;
-        color: #1a1a1d;
-        z-index: 999;
-    }
-
     .left{
         margin: 0;   
     }
+
+    /* Hamburgermenu Start */
+    
+    .accordion{
+        background: none;
+        cursor: pointer;
+        font-size: 2.4em;
+        text-align: left;
+        position: absolute;
+        top: 10px;
+        left: 20px;
+        border: none;
+        outline: none;
+        transition: 0.4s;
+        display: inline-block;
+        z-index: 2;
+        }
+
+    .openacc{
+        display: none;
+        background-color: green;
+        padding: 20px;
+        font-size: 3rem;
+        position: absolute;
+        top: 0;
+    }
+        
+        .panel{
+        display: none;
+        overflow: hidden;
+        position: absolute;
+        padding-top: 40px;
+        margin-bottom: 0;
+        top: 0px;
+        bottom: 0;
+        width: 100%;
+        }
+
+    /* Hamburgermenu End */
 
 }
 
 @media(max-width:1100px){
 
     main{
-        margin-top: 420px;
+        margin-top: 440px;
     }
 
     nav{
@@ -291,7 +348,7 @@ text-align: center;
         background-position: top -80px right -70px;
         background-attachment: fixed;
         width: 100%;
-        height: 420px;
+        height: 416px;
         display: block;
         position: absolute;
         top: 0;

@@ -32,3 +32,28 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   let copyyear = document.querySelector('#copyyear').innerHTML = new Date().getFullYear();
+
+  $(document).ready(function(){
+    
+    let acc = document.getElementsByClassName("accordion");
+    
+    for (let i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        let panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+          panel.style.display = "none";
+        } else {
+          panel.style.display = "block";
+          panel.classList.add('active');
+    }
+  });
+}
+
+$(window).resize(function() {
+  if ($(window).width() <= 700) {
+     $('.panel').hide();
+  }
+ else {}
+});
+});
