@@ -46,13 +46,16 @@ document.addEventListener("DOMContentLoaded", () => {
         } else {
           panel.style.display = "block";
           panel.classList.add('active');
+
         }
 
+        /*
     $(document).on('scroll', function(){
       if ($(window).scrollTop() > 55){
          $('.panel').hide();
       }
    });
+*/
 
    $(document).on('scroll', function(){
     if ($(window).scrollTop() > 70){
@@ -60,7 +63,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     if ($(window).scrollTop() < 180){
-      $('.panel').css('width', 'auto');
+      $('.panel').css('width', '100%');
    }
  });
 
@@ -78,8 +81,6 @@ $(window).resize(function() {
  else {}
 });
 });
-
-
 
 let arrow = document.querySelector("#back-to-top");
 let topsection = document.querySelector(".container");

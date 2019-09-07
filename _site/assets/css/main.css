@@ -93,6 +93,19 @@ background-position: top;
 transition: background-position 0.4s ease-in-out;
 }
 
+.panel ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 0;
+    padding-top: 100px;
+}
+
+.panel ul li a{
+    margin-left: 0;
+}
+
 .panel li a:hover {
 text-decoration: underline;
 }
@@ -339,6 +352,10 @@ height: 50px;
 z-index: 1;
 }
 
+.hidden{
+    overflow: hidden;
+}
+
 @media (max-width: 1400px) {
 
 #smalltopheader{
@@ -409,6 +426,7 @@ left: 10px;
 line-height: 40px;
 border: none;
 outline: none;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
 -webkit-transition: 0.4s;
 transition: 0.4s;
 display: inline-block;
@@ -428,8 +446,9 @@ padding-top: 40px;
 margin-bottom: 0;
 top: 0px;
 bottom: 0;
-width: auto;
+width: 100%;
 height: 360px;
+height: 100vh;
 z-index: 2;
 }
 /* Hamburgermenu End */
