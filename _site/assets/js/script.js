@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
   $(document).ready(function(){
     
     let acc = document.getElementsByClassName("accordion");
-    
+      
     for (let i = 0; i < acc.length; i++) {
       acc[i].addEventListener("click", function() {
         this.classList.toggle("active");
@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", () => {
    });
 
    $(document).on('scroll', function(){
-    if ($(window).scrollTop() > 200){
+    if ($(window).scrollTop() > 70){
        $('.panel').css('width', '100%');
     }
 
@@ -79,11 +79,13 @@ $(window).resize(function() {
 });
 });
 
+
+
 let arrow = document.querySelector("#back-to-top");
 let topsection = document.querySelector(".container");
 let smalltopheader = document.querySelector("#smalltopheader");
 
-smalltopheader.style.display = "none"
+smalltopheader.style.display = "none";
 
 window.addEventListener("scroll", () => {
   let rect = topsection.getBoundingClientRect();
