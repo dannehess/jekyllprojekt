@@ -25,22 +25,6 @@ anime
 });
 
 $(document).ready(function(){
-    
-let acc = document.getElementsByClassName("accordion");
-
-
-
-for (let i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-  this.classList.toggle("active");
-  let panel = this.nextElementSibling;
-if (panel.style.display === "block") {
-  panel.style.display = "none";
-}
-else {
-  panel.style.display = "block";
-  panel.classList.add('active');
-}
 
 $(document).on('scroll', function(){
   if ($(window).scrollTop() > 55){
@@ -51,17 +35,11 @@ $(document).on('scroll', function(){
 }
 });
 
-panel.addEventListener('click', () => {
-    panel.style.display = "none";
-    });
-  });
-}
-
 $(document).mouseup(function (e){
 	let panelmenu = $(".panel");
 	  if (!panelmenu.is(e.target) && panelmenu.has(e.target).length === 0){
     panelmenu.hide();
-	  }
+    }
 }); 
 
 $(window).resize(function() {
@@ -70,6 +48,10 @@ $(window).resize(function() {
   }
  else {}
 });
+
+$('.accordion, .panel').on('click', () => {  
+  $('.panel').toggle();
+})
 });
 
 let arrow = document.querySelector("#back-to-top");
