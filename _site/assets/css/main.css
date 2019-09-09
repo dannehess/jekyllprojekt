@@ -7,7 +7,7 @@ header { width: 75%; padding: 10px 0px 20px 0px; background: #fefefe; display: -
 
 * { -webkit-box-sizing: border-box; box-sizing: border-box; }
 
-.left { max-width: 75vw; display: flex; display: -webkit-box; display: -ms-flexbox; padding-left: 60px; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; }
+.left { max-width: 75vw; display: flex; display: -webkit-box; display: -ms-flexbox; padding-left: 40px; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; }
 
 .bowie { width: 25vw; min-height: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; background-image: url(../../assets/images/ziggy.jpg); background-color: #fefefe; background-repeat: no-repeat, no-repeat; background-position: top -80px right -120px; background-attachment: fixed; background-size: 110vh; }
 

@@ -5,732 +5,732 @@ $bowie-red: #f10736;
 $bowie-pink: #ee3e82;
 
 body, html {
-  font-family: 'Montserrat';
-  margin: 0;
-  padding: 0;
-  color: #333;
-  scroll-behavior: smooth;
-  overflow-x: hidden;
-  }
-  
-  .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: stretch;
-  background-color: #fefefe;
-  -ms-flex-align: stretch;
-  align-items: stretch;
-  }
-  
-  header {
-  width: 75%;
-  padding: 10px 0px 20px 0px;
-  background: #fefefe;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: fixed;
-  top: 0;
-  z-index: 1;
-  }
-  
-  * {
+font-family: 'Montserrat';
+margin: 0;
+padding: 0;
+color: #333;
+scroll-behavior: smooth;
+overflow-x: hidden;
+}
+
+.container {
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-align: stretch;
+background-color: #fefefe;
+-ms-flex-align: stretch;
+align-items: stretch;
+}
+
+header {
+width: 75%;
+padding: 10px 0px 20px 0px;
+background: #fefefe;
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+position: fixed;
+top: 0;
+z-index: 1;
+}
+
+* {
+-webkit-box-sizing: border-box;
+box-sizing: border-box;
+}
+
+.left {
+max-width: 75vw;
+display: flex;
+display: -webkit-box;
+display: -ms-flexbox;
+padding-left: 40px;
+-webkit-box-orient: vertical;
+-webkit-box-direction: normal;
+-ms-flex-direction: column;
+flex-direction: column;
+}
+
+.bowie {
+width: 25vw;
+min-height: 100%;
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+background-image: url(../../assets/images/ziggy.jpg);
+background-color: #fefefe;
+background-repeat: no-repeat, no-repeat;
+background-position: top -80px right -120px;
+background-attachment: fixed;
+background-size: 110vh;
+}
+
+nav {
+height: 100%;
+width: 100%;
+background-color: #fefefe;
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+margin-top: 4px;
+padding-right: 50px;
+-webkit-box-pack: end;
+-ms-flex-pack: end;
+justify-content: flex-end;
+-webkit-box-align: end;
+-ms-flex-align: end;
+align-items: flex-end;
+}
+
+nav a, .panel li a {
+display: inline-block;
+font-size: 1.3rem;
+font-family: 'Montserrat', sans-serif;
+padding: 10px 10px;
+margin-right: 2px;
+margin-left: 30px;
+color: #333;
+text-decoration: none;
+background-size: 100% 200%;
+background-position: top;
+-webkit-transition: background-position 0.4s ease-in-out;
+transition: background-position 0.4s ease-in-out;
+}
+
+.panel ul{
+    padding-top: 30px;
+    padding-right: 40px;
+}
+
+.panel ul li a{
+    margin-left: 0;
+}
+
+.panel li a:hover {
+text-decoration: underline;
+}
+
+nav a:hover {
+background-position: bottom;
+background-image: -webkit-gradient(linear, left bottom, left top, color-stop(50%, #6088c8), color-stop(50%, transparent));
+background-image: linear-gradient(to top, #6088c8 50%, transparent 50%);
+}
+
+nav a:nth-child(2):hover {
+background-image: -webkit-gradient(linear, left bottom, left top, color-stop(50%, #f10736), color-stop(50%, transparent));
+background-image: linear-gradient(to top, #f10736 50%, transparent 50%);
+}
+
+nav a:nth-child(3):hover {
+background-image: -webkit-gradient(linear, left bottom, left top, color-stop(50%, #ee3e82), color-stop(50%, transparent));
+background-image: linear-gradient(to top, #ee3e82 50%, transparent 50%);
+}
+
+#merch::before, #bio::before, #disco::before {
+content: '';
+display: block;
+height: 90px;
+margin-top: -90px;
+visibility: hidden;
+background-color: #fefefe;
+}
+
+.logo {
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+padding-left: 0;
+-webkit-box-align: center;
+-ms-flex-align: center;
+align-items: center;
+font-size: 2rem;
+color: #333;
+width: auto;
+}
+
+p {
+font-family: 'Montserrat', sans-serif;
+color: #1a1a1d;
+font-size: 1.2rem;
+margin-top: 4px;
+margin-bottom: 4px;
+line-height: 35px;
+}
+
+main {
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+padding-right: 0px;
+margin-top: 80px;
+-webkit-box-orient: vertical;
+-webkit-box-direction: normal;
+-ms-flex-direction: column;
+flex-direction: column;
+word-break: break-all;
+background-color: #fefefe;
+}
+
+section {
+padding: 10px 40px;
+margin-bottom: 40px;
+background-color: #f9f9f9;
+}
+
+/* Global end */
+/* Merchandise section start */
+.merchandise {
+background-color: #fff;
+margin-bottom: 40px;
+}
+
+.items {
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+}
+
+.item {
+width: 220px;
+}
+
+.item img {
+width: 100%;
+}
+
+.flex {
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-orient: horizontal;
+-webkit-box-direction: normal;
+-ms-flex-direction: row;
+flex-direction: row;
+-ms-flex-pack: distribute;
+justify-content: space-around;
+-ms-flex-wrap: wrap;
+flex-wrap: wrap;
+}
+
+/* Merchandise section end */
+/* Disc section start */
+:root {
+  --blue: #23278A;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-columns: auto;
+  grid-auto-rows: 300px;
+  grid-gap: 10px;
+}
+
+.grid .box-cont {
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  }
-  
-  .left {
-  max-width: 75vw;
-  display: flex;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  padding-left: 60px;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  }
-  
-  .bowie {
-  width: 25vw;
-  min-height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  background-image: url(../../assets/images/ziggy.jpg);
-  background-color: #fefefe;
-  background-repeat: no-repeat, no-repeat;
-  background-position: top -80px right -120px;
-  background-attachment: fixed;
-  background-size: 110vh;
-  }
-  
-  nav {
-  height: 100%;
-  width: 100%;
-  background-color: #fefefe;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 4px;
-  padding-right: 50px;
-  -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-  -webkit-box-align: end;
-  -ms-flex-align: end;
-  align-items: flex-end;
-  }
-  
-  nav a, .panel li a {
-  display: inline-block;
-  font-size: 1.3rem;
-  font-family: 'Montserrat', sans-serif;
-  padding: 10px 10px;
-  margin-right: 2px;
-  margin-left: 30px;
-  color: #333;
-  text-decoration: none;
-  background-size: 100% 200%;
-  background-position: top;
-  -webkit-transition: background-position 0.4s ease-in-out;
-  transition: background-position 0.4s ease-in-out;
-  }
-  
-  .panel ul{
-      padding-top: 30px;
-      padding-right: 40px;
-  }
-  
-  .panel ul li a{
-      margin-left: 0;
-  }
-  
-  .panel li a:hover {
-  text-decoration: underline;
-  }
-  
-  nav a:hover {
-  background-position: bottom;
-  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(50%, #6088c8), color-stop(50%, transparent));
-  background-image: linear-gradient(to top, #6088c8 50%, transparent 50%);
-  }
-  
-  nav a:nth-child(2):hover {
-  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(50%, #f10736), color-stop(50%, transparent));
-  background-image: linear-gradient(to top, #f10736 50%, transparent 50%);
-  }
-  
-  nav a:nth-child(3):hover {
-  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(50%, #ee3e82), color-stop(50%, transparent));
-  background-image: linear-gradient(to top, #ee3e82 50%, transparent 50%);
-  }
-  
-  #merch::before, #bio::before, #disco::before {
-  content: '';
-  display: block;
-  height: 90px;
-  margin-top: -90px;
-  visibility: hidden;
-  background-color: #fefefe;
-  }
-  
-  .logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding-left: 0;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  font-size: 2rem;
-  color: #333;
-  width: auto;
-  }
-  
-  p {
-  font-family: 'Montserrat', sans-serif;
-  color: #1a1a1d;
-  font-size: 1.2rem;
-  margin-top: 4px;
-  margin-bottom: 4px;
-  line-height: 35px;
-  }
-  
-  main {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding-right: 0px;
-  margin-top: 80px;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  word-break: break-all;
-  background-color: #fefefe;
-  }
-  
-  section {
-  padding: 10px 40px;
-  margin-bottom: 40px;
-  background-color: #f9f9f9;
-  }
-  
-  /* Global end */
-  /* Merchandise section start */
-  .merchandise {
-  background-color: #fff;
-  margin-bottom: 40px;
-  }
-  
-  .items {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  }
-  
-  .item {
-  width: 220px;
-  }
-  
-  .item img {
-  width: 100%;
-  }
-  
-  .flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -ms-flex-pack: distribute;
-  justify-content: space-around;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  }
-  
-  /* Merchandise section end */
-  /* Disc section start */
-  :root {
-    --blue: #23278A;
-  }
-  
-  .grid {
-    display: -ms-grid;
-    display: grid;
-    grid-auto-columns: auto;
-    grid-auto-rows: 300px;
-    grid-gap: 10px;
-  }
-  
-  .grid .box-cont {
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    position: relative;
-    overflow: hidden;
-    -webkit-animation: pulse 1s 1;
-            animation: pulse 1s 1;
-    color: white;
-    text-align: center;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  
-  @-webkit-keyframes pulse {
-    0% {
-      background-color: white;
-    }
-    100% {
-      background-color: #6088c8;
-    }
-  }
-  
-  @keyframes pulse {
-    0% {
-      background-color: white;
-    }
-    100% {
-      background-color: #6088c8;
-    }
-  }
-  
-  .box {
-    -webkit-transform: scale(0);
-            transform: scale(0);
-    background-repeat: no-repeat;
-    position: absolute;
-    border-radius: 100%;
-    will-change: transform;
-  }
-  
-  .multiple-col {
-    -ms-grid-column: 3;
-    -ms-grid-column-span: 2;
-    grid-column: 3 / 5;
-  }
-  
-  .multiple-row {
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 2;
-    grid-row: 1 / 3;
-  }
-  
-  .box-cont h3 {
-    font-weight: lighter;
-    font-size: x-large;
-    margin-top: auto;
-  }
-  
-  .dav-bow-disc-img {
-    background-image: url("../images/1967_davidbowie_uk.jpg");
-    background-size: cover;
-  }
-  
-  .dav-bow-disc-img:hover {
-    background-size: 150%;
-  }
-  
-  .man-who-img {
-    background-image: url("../images/the-man-who-sold-the-world.jpg");
-    background-size: cover;
-  }
-  
-  .man-who-img:hover {
-    background-size: 120%;
-  }
-  
-  .hunky-dory-img {
-    background-image: url("../images/hunky-dory.jpg");
-    background-size: cover;
-  }
-  
-  .hunky-dory-img:hover {
-    background-size: 400%;
-  }
-  
-  .young-am-img {
-    background-image: url("../images/young-americans.jpg");
-    background-size: cover;
-  }
-  
-  .young-am-img:hover {
-    background-size: 160%;
-  }
-  
-  .heroes-img {
-    background-image: url("../images/1977_heroes.jpg");
-    background-size: cover;
-  }
-  
-  .heroes-img:hover {
-    background-size: 140%;
-  }
-  
-  .overlay-sixt {
-    position: absolute;
-    content: " ";
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: block;
-    z-index: 0;
-    background-color: rgba(96, 136, 200, 0.6);
-  }
-  
-  .overlay-sixt:hover {
-    background-color: rgba(96, 136, 200, 0);
-  }
-  
-  .overlay-eight {
-    position: absolute;
-    content: " ";
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: block;
-    z-index: 0;
-    background-color: rgba(241, 7, 54, 0.377);
-  }
-  
-  .disc {
-    background-color: #fff;
-    margin-bottom: 40px;
-  }
-  
-  .invisible {
-    display: none;
-    height: 0;
-    overflow: hidden;
-  }
-  
-  .visible {
-    display: -ms-grid;
-    display: grid;
-    height: 100;
-    -webkit-animation: crescendo 0.5s alternate 1 ease-in;
-            animation: crescendo 0.5s alternate 1 ease-in;
-  }
-  
-  @-webkit-keyframes crescendo {
-    0% {
-      -webkit-transform: scale(0.7);
-              transform: scale(0.7);
-    }
-    100% {
-      -webkit-transform: scale(1);
-              transform: scale(1);
-    }
-  }
-  
-  @keyframes crescendo {
-    0% {
-      -webkit-transform: scale(0.7);
-              transform: scale(0.7);
-    }
-    100% {
-      -webkit-transform: scale(1);
-              transform: scale(1);
-    }
-  }
-  
-  ul a:hover {
-    position: relative;
-  }
-  
-  ul a:hover:after {
-    content: url(https://upload.wikimedia.org/wikipedia/en/c/cb/Bowie-davidbowie.jpg);
-    display: block;
-    color: orange;
-    display: block;
-    position: absolute;
-    left: 40vw;
-    /* change this value to one that suits you */
-    top: 56px;
-  }
-  
-  /* Disc section end */
-  /* Bio section start */
-  .bio {
-    background-color: #fff;
-  }
-  
-  .qfacts {
-    font-family: 'Montserrat';
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin: 0em;
-    margin-bottom: 10px;
-    display: inline-block;
-    font-family: 'Montserrat', sans-serif;
-  }
-  
-  .bioimg {
-    width: 200px;
-    margin: 10px 10px 0px 5px;
-    float: left;
-    opacity: 0.8;
-    border-radius: 8px;
-  }
-  
-  .biotext {
-    display: inline;
-  }
-  
-  /* Bio section end */
-  h1 {
-  font-size: 3rem;
-  line-height: 30px;
-  }
-  
-  .logotype {
-  width: 100px;
-  }
-  
-  footer {
-  padding: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  font-size: 1.2em;
-  }
-  
-  .underheading {
-  margin-left: 50px;
-  margin-top: 40px;
-  font-size: 2rem;
-  }
-  
-  .info {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+          box-sizing: border-box;
   position: relative;
-  bottom: 20px;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  padding: 10px 0;
-  text-align: center;
-  }
-  
-  .hamburger {
-  display: none;
-  }
-  
-  .smallheader {
-  display: none;
-  background: #fefefe;
-  }
-  
-  /* Hamburgermenu Start */
-  .active {
-  z-index: 1;
-  }
-  
-  .panel ul {
-  list-style-type: none;
-  margin-top: 40px;
-  }
-  
-  .panel li a {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  display: inline-block;
-  padding: 14px 18px;
-  margin-bottom: 20px;
-  margin-left: 30px;
-  color: #1a1a1d;
-  font-size: 1.8rem;
-  text-decoration: none;
-  text-align: center;
-  }
-  
-  .accordion, .panel, .x {
-  display: none;
-  }
-  
-  /* Hamburgermenu End */
-  #back-to-top {
-  width: 40px;
-  height: 40px;
-  background-color: #1a1a1d;
+  overflow: hidden;
+  -webkit-animation: pulse 1s 1;
+          animation: pulse 1s 1;
   color: white;
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  display: none;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  border-radius: 40px;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  }
-  
-  #back-to-top:hover {
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
-  }
-  
-  #back-to-top > img {
-  width: 16px;
-  }
-  
-  #smalltopheader{
-  display: none;
-  background: #fefefe;
-  box-shadow: 0 4px 20px -2px rgb(245, 243, 243);
-  width: 100%;
-  height: 80px;
-  }
-  
-  #smalltopheaderlogo{
-  position: absolute;
-  top: 15px;
-  right: 30px;
-  height: 50px;
-  z-index: 1;
-  }
-  
-  .hidden{
-      overflow: hidden;
-  }
-  
-  @media (max-width: 1400px) {
-  
-  .biography{
-      padding-top: 220px;
-  }
-  
-  .left {
-      max-width: 74vw;
-      margin-left: 20px;
-  }
-  
-  .underheading{
-      margin-left: 0;
-  }
-  
-  .left h1, .left h2{
-      display: flex;
-      align-items: center;
-      justify-content: center;
-  }
-  
-  #smalltopheader{
-  display: block;
-  z-index: 1;
-  position: fixed;
-  }
-  
-  #smallziggy {
-  width: 100%;
-  }
-  
-  nav {
-  margin-top: 14px;
-  width: 100%;
+  text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-  -webkit-box-align: end;
-  -ms-flex-align: end;
-  align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    background-color: white;
   }
-  
-  nav a {
-  padding: 10px 4px;
-  margin-right: 4px;
-  margin-left: 30px;
+  100% {
+    background-color: #6088c8;
   }
-  
-  .logo {
-  width: 200px;
-  margin-top: 10px;
+}
+
+@keyframes pulse {
+  0% {
+    background-color: white;
   }
-  
-  .logotype {
-  width: 100px;
+  100% {
+    background-color: #6088c8;
   }
-  
-  header {
-  width: 72%;
-  padding: 0;
-  margin: 0;
-  }
-  
-  .container {
-  margin: 0;
-  padding: 0;
-  }
-  
-  /* Hamburgermenu Start */
-  .accordion, .x {
-  background: none;
-  cursor: pointer;
-  font-size: 2.4em;
-  text-align: left;
-  position: fixed;
-  background: #fefefe;
-  top: 10px;
-  padding: 8px 8px 10px 12px;
-  left: 10px;
-  line-height: 40px;
-  border: none;
-  outline: none;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-  display: inline-block;
-  z-index: 999;
-  }
-  
-  #smalltopheader{
-  z-index: 999;
-  }
-  
-  .panel {
-  display: none;
-  overflow: hidden;
-  position: fixed;
-  background: #fefefe;
-  box-shadow: 0 4px 20px -2px rgb(245, 243, 243);
-  padding-top: 40px;
-  margin-bottom: 0;
-  top: 0px;
-  height: auto;
-  z-index: 2;
-  }
-  /* Hamburgermenu End */
-  }
-  
-  @media (max-width: 1100px) {
-  
-  main {
-  margin-top: 220px;
-  margin-right: 20px;
-  }
-  
-  .left {
-      max-width: 92vw;
-      padding-left: 20px;
-  }
-  
-  nav {
-  max-width: 100%;
-  display: none;
-  }
-  
-  .bowie {
-  display: none;
-  }
-  
-  .smallheader {
-  background-image: url("../../assets/images/ziggy.jpg");
-  background-repeat: no-repeat, no-repeat;
-  background-position: top -80px right -70px;
-  background-attachment: fixed;
-  width: 100%;
-  height: 416px;
-  display: block;
+}
+
+.box {
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  background-repeat: no-repeat;
   position: absolute;
+  border-radius: 100%;
+  will-change: transform;
+}
+
+.multiple-col {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
+  grid-column: 3 / 5;
+}
+
+.multiple-row {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1 / 3;
+}
+
+.box-cont h3 {
+  font-weight: lighter;
+  font-size: x-large;
+  margin-top: auto;
+}
+
+.dav-bow-disc-img {
+  background-image: url("../images/1967_davidbowie_uk.jpg");
+  background-size: cover;
+}
+
+.dav-bow-disc-img:hover {
+  background-size: 150%;
+}
+
+.man-who-img {
+  background-image: url("../images/the-man-who-sold-the-world.jpg");
+  background-size: cover;
+}
+
+.man-who-img:hover {
+  background-size: 120%;
+}
+
+.hunky-dory-img {
+  background-image: url("../images/hunky-dory.jpg");
+  background-size: cover;
+}
+
+.hunky-dory-img:hover {
+  background-size: 400%;
+}
+
+.young-am-img {
+  background-image: url("../images/young-americans.jpg");
+  background-size: cover;
+}
+
+.young-am-img:hover {
+  background-size: 160%;
+}
+
+.heroes-img {
+  background-image: url("../images/1977_heroes.jpg");
+  background-size: cover;
+}
+
+.heroes-img:hover {
+  background-size: 140%;
+}
+
+.overlay-sixt {
+  position: absolute;
+  content: " ";
   top: 0;
   left: 0;
-  right: 0;
-  }
-  
-  .smallheader img {
-  max-width: 100%;
-  }
-  
-  header {
+  width: 100%;
+  height: 100%;
+  display: block;
+  z-index: 0;
+  background-color: rgba(96, 136, 200, 0.6);
+}
+
+.overlay-sixt:hover {
+  background-color: rgba(96, 136, 200, 0);
+}
+
+.overlay-eight {
+  position: absolute;
+  content: " ";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  z-index: 0;
+  background-color: rgba(241, 7, 54, 0.377);
+}
+
+.disc {
+  background-color: #fff;
+  margin-bottom: 40px;
+}
+
+.invisible {
   display: none;
+  height: 0;
+  overflow: hidden;
+}
+
+.visible {
+  display: -ms-grid;
+  display: grid;
+  height: 100;
+  -webkit-animation: crescendo 0.5s alternate 1 ease-in;
+          animation: crescendo 0.5s alternate 1 ease-in;
+}
+
+@-webkit-keyframes crescendo {
+  0% {
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
   }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
-  
-  /*# sourceMappingURL=main.css.map */
+}
+
+@keyframes crescendo {
+  0% {
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+ul a:hover {
+  position: relative;
+}
+
+ul a:hover:after {
+  content: url(https://upload.wikimedia.org/wikipedia/en/c/cb/Bowie-davidbowie.jpg);
+  display: block;
+  color: orange;
+  display: block;
+  position: absolute;
+  left: 40vw;
+  /* change this value to one that suits you */
+  top: 56px;
+}
+
+/* Disc section end */
+/* Bio section start */
+.bio {
+  background-color: #fff;
+}
+
+.qfacts {
+  font-family: 'Montserrat';
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0em;
+  margin-bottom: 10px;
+  display: inline-block;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.bioimg {
+  width: 200px;
+  margin: 10px 10px 0px 5px;
+  float: left;
+  opacity: 0.8;
+  border-radius: 8px;
+}
+
+.biotext {
+  display: inline;
+}
+
+/* Bio section end */
+h1 {
+font-size: 3rem;
+line-height: 30px;
+}
+
+.logotype {
+width: 100px;
+}
+
+footer {
+padding: 20px;
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-pack: center;
+-ms-flex-pack: center;
+justify-content: center;
+-webkit-box-align: center;
+-ms-flex-align: center;
+align-items: center;
+font-size: 1.2em;
+}
+
+.underheading {
+margin-left: 50px;
+margin-top: 40px;
+font-size: 2rem;
+}
+
+.info {
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+position: relative;
+bottom: 20px;
+-webkit-box-pack: center;
+-ms-flex-pack: center;
+justify-content: center;
+-webkit-box-align: center;
+-ms-flex-align: center;
+align-items: center;
+padding: 10px 0;
+text-align: center;
+}
+
+.hamburger {
+display: none;
+}
+
+.smallheader {
+display: none;
+background: #fefefe;
+}
+
+/* Hamburgermenu Start */
+.active {
+z-index: 1;
+}
+
+.panel ul {
+list-style-type: none;
+margin-top: 40px;
+}
+
+.panel li a {
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+display: inline-block;
+padding: 14px 18px;
+margin-bottom: 20px;
+margin-left: 30px;
+color: #1a1a1d;
+font-size: 1.8rem;
+text-decoration: none;
+text-align: center;
+}
+
+.accordion, .panel, .x {
+display: none;
+}
+
+/* Hamburgermenu End */
+#back-to-top {
+width: 40px;
+height: 40px;
+background-color: #1a1a1d;
+color: white;
+position: fixed;
+bottom: 20px;
+right: 20px;
+display: none;
+-webkit-box-pack: center;
+-ms-flex-pack: center;
+justify-content: center;
+-webkit-box-align: center;
+-ms-flex-align: center;
+align-items: center;
+border-radius: 40px;
+-webkit-transition: all 0.2s ease-in-out;
+transition: all 0.2s ease-in-out;
+}
+
+#back-to-top:hover {
+-webkit-transform: scale(1.1);
+transform: scale(1.1);
+}
+
+#back-to-top > img {
+width: 16px;
+}
+
+#smalltopheader{
+display: none;
+background: #fefefe;
+box-shadow: 0 4px 20px -2px rgb(245, 243, 243);
+width: 100%;
+height: 80px;
+}
+
+#smalltopheaderlogo{
+position: absolute;
+top: 15px;
+right: 30px;
+height: 50px;
+z-index: 1;
+}
+
+.hidden{
+    overflow: hidden;
+}
+
+@media (max-width: 1400px) {
+
+.biography{
+    padding-top: 220px;
+}
+
+.left {
+    max-width: 74vw;
+    margin-left: 20px;
+}
+
+.underheading{
+    margin-left: 0;
+}
+
+.left h1, .left h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#smalltopheader{
+display: block;
+z-index: 1;
+position: fixed;
+}
+
+#smallziggy {
+width: 100%;
+}
+
+nav {
+margin-top: 14px;
+width: 100%;
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-pack: end;
+-ms-flex-pack: end;
+justify-content: flex-end;
+-webkit-box-align: end;
+-ms-flex-align: end;
+align-items: flex-end;
+}
+
+nav a {
+padding: 10px 4px;
+margin-right: 4px;
+margin-left: 30px;
+}
+
+.logo {
+width: 200px;
+margin-top: 10px;
+}
+
+.logotype {
+width: 100px;
+}
+
+header {
+width: 72%;
+padding: 0;
+margin: 0;
+}
+
+.container {
+margin: 0;
+padding: 0;
+}
+
+/* Hamburgermenu Start */
+.accordion, .x {
+background: none;
+cursor: pointer;
+font-size: 2.4em;
+text-align: left;
+position: fixed;
+background: #fefefe;
+top: 10px;
+padding: 8px 8px 10px 12px;
+left: 10px;
+line-height: 40px;
+border: none;
+outline: none;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+-webkit-transition: 0.4s;
+transition: 0.4s;
+display: inline-block;
+z-index: 999;
+}
+
+#smalltopheader{
+z-index: 999;
+}
+
+.panel {
+display: none;
+overflow: hidden;
+position: fixed;
+background: #fefefe;
+box-shadow: 0 4px 20px -2px rgb(245, 243, 243);
+padding-top: 40px;
+margin-bottom: 0;
+top: 0px;
+height: auto;
+z-index: 2;
+}
+/* Hamburgermenu End */
+}
+
+@media (max-width: 1100px) {
+
+main {
+margin-top: 220px;
+margin-right: 20px;
+}
+
+.left {
+    max-width: 92vw;
+    padding-left: 20px;
+}
+
+nav {
+max-width: 100%;
+display: none;
+}
+
+.bowie {
+display: none;
+}
+
+.smallheader {
+background-image: url("../../assets/images/ziggy.jpg");
+background-repeat: no-repeat, no-repeat;
+background-position: top -80px right -70px;
+background-attachment: fixed;
+width: 100%;
+height: 416px;
+display: block;
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+}
+
+.smallheader img {
+max-width: 100%;
+}
+
+header {
+display: none;
+}
+}
+
+/*# sourceMappingURL=main.css.map */
