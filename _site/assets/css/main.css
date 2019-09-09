@@ -205,10 +205,17 @@ section {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   position: relative;
-  background-color: #6088c8;
   overflow: hidden;
-  -webkit-animation: pulse 5s 1;
-          animation: pulse 5s 1;
+  -webkit-animation: pulse 1s 1;
+          animation: pulse 1s 1;
+  color: white;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 @-webkit-keyframes pulse {
@@ -250,6 +257,85 @@ section {
   grid-row: 1 / 3;
 }
 
+.box-cont h3 {
+  font-weight: lighter;
+  font-size: x-large;
+  margin-top: auto;
+}
+
+.dav-bow-disc-img {
+  background-image: url("../images/1967_davidbowie_uk.jpg");
+  background-size: cover;
+}
+
+.dav-bow-disc-img:hover {
+  background-size: 150%;
+}
+
+.man-who-img {
+  background-image: url("../images/the-man-who-sold-the-world.jpg");
+  background-size: cover;
+}
+
+.man-who-img:hover {
+  background-size: 120%;
+}
+
+.hunky-dory-img {
+  background-image: url("../images/hunky-dory.jpg");
+  background-size: cover;
+}
+
+.hunky-dory-img:hover {
+  background-size: 400%;
+}
+
+.young-am-img {
+  background-image: url("../images/young-americans.jpg");
+  background-size: cover;
+}
+
+.young-am-img:hover {
+  background-size: 160%;
+}
+
+.heroes-img {
+  background-image: url("../images/1977_heroes.jpg");
+  background-size: cover;
+}
+
+.heroes-img:hover {
+  background-size: 140%;
+}
+
+.overlay-sixt {
+  position: absolute;
+  content: " ";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  z-index: 0;
+  background-color: rgba(96, 136, 200, 0.6);
+}
+
+.overlay-sixt:hover {
+  background-color: rgba(96, 136, 200, 0);
+}
+
+.overlay-eight {
+  position: absolute;
+  content: " ";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  z-index: 0;
+  background-color: rgba(241, 7, 54, 0.377);
+}
+
 .disc {
   background-color: #fff;
   margin-bottom: 40px;
@@ -259,14 +345,36 @@ section {
   display: none;
   height: 0;
   overflow: hidden;
-  -webkit-transition: height 350ms ease-in-out;
-  transition: height 350ms ease-in-out;
 }
 
 .visible {
   display: -ms-grid;
   display: grid;
-  height: auto;
+  height: 100;
+  -webkit-animation: crescendo 0.5s alternate 1 ease-in;
+          animation: crescendo 0.5s alternate 1 ease-in;
+}
+
+@-webkit-keyframes crescendo {
+  0% {
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes crescendo {
+  0% {
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
 }
 
 ul a:hover {
