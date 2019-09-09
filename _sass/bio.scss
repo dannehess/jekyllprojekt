@@ -1,24 +1,35 @@
 /* Bio section start */
 
-/* Style the video: 100% width and height to cover the entire window */
+
 #myVideo {
-    position: relative;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
+  min-width: 100%;
+  min-height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: -99;
+  transform: translateX(-50%) translateY(-50%);
   }
   
   /* Add some content at the bottom of the video/page */
   .content {
-    position: absolute;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.5);
-    color: #f1f1f1;
-    width: auto;
-    padding: 20px;
+    max-height: 100%;
+    max-width: 100%;
+    position: relative;
+    z-index: 2;
+    color: white;
   }
-  
+
+  .video-content{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 0px 40px 40px 40px;
+    word-break: normal;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+
   /* Style the button used to pause/play the video */
   #myBtn {
     width: 200px;
@@ -36,7 +47,12 @@
   }
 
 .bio{
-    background-color: #fff;
+  margin-top: 80px;  
+  padding-bottom: 60px;
+    z-index: 1;
+}
+.video{
+  z-index: 0;
 }
 
 .qfacts{
@@ -56,8 +72,9 @@
         border-radius: 8px;
 }
 
-.biotext{
+.bio-text{
     display: inline;
+    color: white;
 }
 
 
