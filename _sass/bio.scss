@@ -1,0 +1,99 @@
+/* Bio section start */
+
+/* Style the video: 100% width and height to cover the entire window */
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+  }
+  
+  /* Add some content at the bottom of the video/page */
+  .content {
+    position: fixed;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  /* Style the button used to pause/play the video */
+  #myBtn {
+    width: 200px;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  #myBtn:hover {
+    background: #ddd;
+    color: black;
+  }
+
+.bio{
+    background-color: #fff;
+}
+
+.qfacts{
+    font-family: 'Montserrat';
+    display: flex;
+    margin: 0em;
+    margin-bottom: 10px;
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.bioimg{
+        width: 200px;
+        margin: 10px 10px 0px 5px;
+        float: left;
+        opacity: 0.8;
+        border-radius: 8px;
+}
+
+.biotext{
+    display: inline;
+}
+
+
+
+/*Video*/
+
+
+/* video 01 */
+/* .home-banner .slide .video-slide {
+    background-color: #000; }
+  
+  .home-banner.loading .video-background {
+    opacity: 0; }
+  
+  .video-background {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    padding-top: 5%;
+    width: 100%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    -webkit-transition: 2s opacity ease;
+    transition: 2s opacity ease;
+    opacity: 1; }
+  
+  .video-foreground,
+  .video-background iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; }
+ */
+    /*video end*/
+
+/* Bio section end */
