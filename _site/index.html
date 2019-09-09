@@ -5,20 +5,31 @@
     <meta charset="utf-8">
     <title>David Bowie</title>
     <link rel="stylesheet" href="/assets/css/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   </head>
   <body>
     <div class="container">
         <div class="left">
-        <main>
 <header>
-    <span class="logo"><a href="#"><img class="logotype" src="../assets/images/logo.png"></a></span>
+    <div class="logo"><a href="#"><img class="logotype" src="../assets/images/logo.png"></a></div>
     <nav>
         <a href="#bio">Biography</a>
         <a href="#disco">Discography</a>
         <a href="#merch">Merchandise</a>
     </nav>
 </header>
-<section class=bio>
+<div class="smallheader">
+  <div id="smalltopheader"><img src="assets/images/logo.png" id="smalltopheaderlogo"></div>
+        <span class="accordion">&#9776;</span>
+			<div class="panel">
+		  <ul>
+				<li><a href="#bio">Biography</a></li>
+				<li><a href="#disco">Discography</a></li>
+				<li><a href="#merch">Merchandise</a></li></ul>
+        </div>
+</div>
+<main>
+<section class="bio">
     <a class="anchor" id="bio"></a>
     <h1 id="biography">Biography</h1>
     <h3 class="underheading"> Quick Facts</h3>
@@ -143,12 +154,16 @@
         </div>
 
 </div>
-
-<footer>&copy; 2019 - David Bowie - All rights reserved</footer>
 </main>
+<footer>
+    &copy;&nbsp;&nbsp;<p id="copyyear"></p>&nbsp;- David Bowie
+</footer>
+<a href="#">
+        <div id="back-to-top"><img src="../assets/images/back-to-top.png" alt="back-to-top"></div>
+    </a>
 </div>
+
 <div class="bowie">
-</div>
 </div>
 
 
