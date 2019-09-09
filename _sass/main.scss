@@ -1,4 +1,5 @@
 @import 'disc';
+@import 'bio';
 @import 'merch';
 
 /* Global Start */
@@ -181,30 +182,6 @@ margin-bottom: 40px;
 background-color: #f9f9f9;
 }
   
-  .qfacts {
-    font-family: 'Montserrat';
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin: 0em;
-    margin-bottom: 10px;
-    display: inline-block;
-    font-family: 'Montserrat', sans-serif;
-  }
-  
-  .bioimg {
-    width: 200px;
-    margin: 10px 10px 0px 5px;
-    float: left;
-    opacity: 0.8;
-    border-radius: 8px;
-  }
-  
-  .biotext {
-    display: inline;
-  }
-  
-  /* Bio section end */
   h1 {
   font-size: 3rem;
   line-height: 30px;
