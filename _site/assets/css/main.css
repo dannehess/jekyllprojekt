@@ -70,6 +70,18 @@ ul a:hover { position: relative; }
 ul a:hover:after { content: url(https://upload.wikimedia.org/wikipedia/en/c/cb/Bowie-davidbowie.jpg); display: block; color: orange; display: block; position: absolute; left: 40vw; /* change this value to one that suits you */ top: 56px; }
 
 /* Disc section end */
+.merchandise { background-color: #fff; margin-bottom: 40px; }
+
+.items { display: -webkit-box; display: -ms-flexbox; display: flex; }
+
+.item { width: 220px; }
+
+.item img { width: 100%; }
+
+.flex { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; -ms-flex-pack: distribute; justify-content: space-around; -ms-flex-wrap: wrap; flex-wrap: wrap; }
+
+.info { display: -webkit-box; display: -ms-flexbox; display: flex; position: relative; bottom: 20px; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; padding: 10px 0; text-align: center; }
+
 /* Global Start */
 body, html { font-family: 'Montserrat'; margin: 0; padding: 0; color: #333; scroll-behavior: smooth; overflow-x: hidden; }
 
@@ -79,7 +91,7 @@ header { width: 75%; padding: 10px 0px 20px 0px; background: #fefefe; display: -
 
 * { -webkit-box-sizing: border-box; box-sizing: border-box; }
 
-.left { max-width: 75vw; display: flex; display: -webkit-box; display: -ms-flexbox; padding-left: 60px; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; }
+.left { max-width: 75vw; display: flex; display: -webkit-box; display: -ms-flexbox; padding-left: 40px; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; }
 
 .bowie { width: 25vw; min-height: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; background-image: url(../../assets/images/ziggy.jpg); background-color: #fefefe; background-repeat: no-repeat, no-repeat; background-position: top -80px right -120px; background-attachment: fixed; background-size: 110vh; }
 
@@ -109,19 +121,43 @@ main { display: -webkit-box; display: -ms-flexbox; display: flex; padding-right:
 
 section { padding: 10px 40px; margin-bottom: 40px; background-color: #f9f9f9; }
 
-/* Global end */
-/* Merchandise section start */
-.merchandise { background-color: #fff; margin-bottom: 40px; }
+.qfacts { font-family: 'Montserrat'; display: -webkit-box; display: -ms-flexbox; display: flex; margin: 0em; margin-bottom: 10px; display: inline-block; font-family: 'Montserrat', sans-serif; }
 
-.items { display: -webkit-box; display: -ms-flexbox; display: flex; }
+.bioimg { width: 200px; margin: 10px 10px 0px 5px; float: left; opacity: 0.8; border-radius: 8px; }
 
-.item { width: 220px; }
+.biotext { display: inline; }
 
-.item img { width: 100%; }
+/* Bio section end */
+h1 { font-size: 3rem; line-height: 30px; }
 
-.flex { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; -ms-flex-pack: distribute; justify-content: space-around; -ms-flex-wrap: wrap; flex-wrap: wrap; }
+.logotype { width: 100px; }
 
-/* Merchandise section end */
+footer { padding: 20px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; font-size: 1.2em; }
+
+.underheading { margin-left: 50px; margin-top: 40px; font-size: 2rem; }
+
+.hamburger { display: none; }
+
+.smallheader { display: none; background: #fefefe; }
+
+/* Hamburgermenu Start */
+.active { z-index: 1; }
+
+.panel ul { list-style-type: none; margin-top: 40px; }
+
+.panel li a { font-family: Verdana, Geneva, Tahoma, sans-serif; display: inline-block; padding: 14px 18px; margin-bottom: 20px; margin-left: 30px; color: #1a1a1d; font-size: 1.8rem; text-decoration: none; text-align: center; }
+
+.accordion, .panel, .x { display: none; }
+
+/* Hamburgermenu End */
+#back-to-top { width: 40px; height: 40px; background-color: #1a1a1d; color: white; position: fixed; bottom: 20px; right: 20px; display: none; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; border-radius: 40px; -webkit-transition: all 0.2s ease-in-out; transition: all 0.2s ease-in-out; }
+
+#back-to-top:hover { -webkit-transform: scale(1.1); transform: scale(1.1); }
+
+#back-to-top > img { width: 16px; }
+
+#smalltopheader { display: none; height: 0; overflow: hidden; }
+
 /* Bio section start */
 .bio { background-color: #fff; }
 
