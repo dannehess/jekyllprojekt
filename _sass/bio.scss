@@ -2,8 +2,8 @@
 
 
 #myVideo {
-  min-width: 100%;
-  min-height: 100%;
+  width: 100%;
+  height: 100%;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -13,8 +13,7 @@
   
   /* Add some content at the bottom of the video/page */
   .content {
-    max-height: 100%;
-    max-width: 100%;
+    min-height: 100%;
     position: relative;
     z-index: 2;
     color: white;
@@ -22,7 +21,7 @@
 
   .video-content{
     height: 100%;
-    width: 100%;
+    min-width: 100%;
     background-color: rgba(0, 0, 0, 0.8);
     padding: 0px 40px 40px 40px;
     word-break: normal;
@@ -49,7 +48,8 @@
 .bio{
   margin-top: 80px;  
   padding-bottom: 60px;
-    z-index: 1;
+  z-index: 1;
+  font-family: 'Montserrat', sans-serif;
 }
 .video{
   z-index: 0;
@@ -61,7 +61,6 @@
     margin: 0em;
     margin-bottom: 10px;
     display: inline-block;
-    font-family: 'Montserrat', sans-serif;
 }
 
 .bioimg{

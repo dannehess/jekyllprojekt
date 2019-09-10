@@ -1,48 +1,54 @@
 .merchandise {
-    background-color: #fff;
-    margin-bottom: 40px;
-    }
-    
-    .items {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    }
-    
-    .item {
-    width: 220px;
-    }
-    
-    .item img {
-    width: 100%;
-    }
-    
-    .flex {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -ms-flex-pack: distribute;
-    justify-content: space-around;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    }
+background-color: #fff;
+margin-bottom: 40px;
+}
 
-    .info {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        position: relative;
-        bottom: 20px;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
-        padding: 10px 0;
-        text-align: center;
-        }
+.items {
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+}
+
+.item {
+width: 220px;
+transition: all ease-in 0.1s;
+transform:scale(1);
+}
+
+.item img {
+width: 100%;
+}
+
+.flex {
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-orient: horizontal;
+-webkit-box-direction: normal;
+-ms-flex-direction: row;
+flex-direction: row;
+-ms-flex-pack: distribute;
+justify-content: space-around;
+-ms-flex-wrap: wrap;
+flex-wrap: wrap;
+}
+
+.info {
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+position: relative;
+bottom: 20px;
+-webkit-box-pack: center;
+-ms-flex-pack: center;
+justify-content: center;
+-webkit-box-align: center;
+-ms-flex-align: center;
+align-items: center;
+padding: 10px 0;
+text-align: center;
+}
+
+.item:hover{
+transform: scale(1.2);
+}
