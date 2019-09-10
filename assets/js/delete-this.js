@@ -1,4 +1,4 @@
-<script>
+´
 // Get the video
 var video = document.getElementById("myVideo");
 
@@ -15,4 +15,3 @@ function myFunction() {
     btn.innerHTML = "Play";
   }
 }
-</script>
