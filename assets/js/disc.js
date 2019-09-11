@@ -15,27 +15,52 @@ function showDiscFunc(elem) {
   }
 }
 
-let selectSixtSec = document.getElementById("sixt-sevent-h2");
+let selectSixtTar = document.getElementById("sixt-sevent-target");
 let selectSixtGrid = document.getElementsByClassName("grid-sixt");
+let selectSixtArrow = document.getElementsByClassName("sixt-arrow-icon");
 
-let selectEightSec = document.getElementById("eighti-nineti-h2");
+let selectEightTar = document.getElementById("eighti-target");
 let selectEightGrid = document.getElementsByClassName("grid-eight");
+let selectEightArrow = document.getElementsByClassName("eighti-arrow-icon");
+
+let selectMillenTar = document.getElementById("millen-target");
+let selectMillenGrid = document.getElementsByClassName("grid-millen");
+let selectMillenArrow = document.getElementsByClassName("millen-arrow-icon");
 
 
-
-selectSixtSec.addEventListener(
+selectSixtTar.addEventListener(
   "click",
   function() {
-    showDiscFunc(selectSixtGrid);
+    showDiscFunc(selectSixtGrid),
+    turnArrowFunc(selectSixtArrow)
   },
   false
 );
 
-selectEightSec.addEventListener(
+selectEightTar.addEventListener(
   "click",
   function() {
-    showDiscFunc(selectEightGrid);
+    showDiscFunc(selectEightGrid),
+    turnArrowFunc(selectEightArrow)
   },
   false
 );
 
+selectMillenTar.addEventListener(
+  "click",
+  function() {
+    showDiscFunc(selectMillenGrid),
+    turnArrowFunc(selectMillenArrow)
+  },
+  false
+);
+
+function turnArrowFunc(elem) {
+  for (let i = 0; i < elem.length; i++) {
+    if (elem[i].classList.contains("open")) {
+      elem[i].classList.remove("open");
+  }else{
+    elem[i].classList.add("open");
+  }
+}
+}
