@@ -1,5 +1,3 @@
-let app = {};
-
 function showDiscFunc(elem) {
   for (let i = 0; i < elem.length; i++) {
     if (elem[i].classList.contains("invisible")) {
@@ -8,6 +6,16 @@ function showDiscFunc(elem) {
     } else {
       elem[i].classList.remove("visible");
       elem[i].classList.add("invisible");
+    }
+  }
+}
+
+function turnArrowFunc(elem) {
+  for (let i = 0; i < elem.length; i++) {
+    if (elem[i].classList.contains("open")) {
+      elem[i].classList.remove("open");
+    } else {
+      elem[i].classList.add("open");
     }
   }
 }
@@ -47,13 +55,3 @@ selectMillenTar.addEventListener(
   },
   false
 );
-
-function turnArrowFunc(elem) {
-  for (let i = 0; i < elem.length; i++) {
-    if (elem[i].classList.contains("open")) {
-      elem[i].classList.remove("open");
-    } else {
-      elem[i].classList.add("open");
-    }
-  }
-}
