@@ -97,8 +97,8 @@ $duration: 0.5s;
   display: -ms-grid;
   display: grid;
   overflow: hidden;
-  -webkit-animation: downsize 1s alternate 1 ease-out;
-  animation: downsize 1s alternate 1 ease-out;
+  -webkit-animation: downsize 1s alternate 1 ease-in-out;
+  animation: downsize 1s alternate 1 ease-in-out;
   animation-fill-mode: forwards;
 }
 
