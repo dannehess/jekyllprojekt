@@ -1,21 +1,21 @@
-/* Disc section start */
 :root {
   --blue: #23278a;
 }
 
-.disc {
+.disc{
   background-color: #fff;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
+  padding: 20px 40px;
   font-family: "Roboto", sans-serif;
   font-weight: lighter;
 }
 
-.grid a {
+.grid a{
   text-decoration: none;
   color: white;
 }
 
-.grid {
+.grid{
   display: -ms-grid;
   display: grid;
   grid-auto-columns: auto;
@@ -23,7 +23,7 @@
   grid-gap: 10px;
 }
 
-.grid .box-cont {
+.grid .box-cont{
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   position: relative;
@@ -58,7 +58,7 @@
   }
 }
 
-.box {
+.box{
   -webkit-transform: scale(0);
   transform: scale(0);
   background-repeat: no-repeat;
@@ -67,77 +67,77 @@
   will-change: transform;
 }
 
-.multiple-col {
+.multiple-col{
   -ms-grid-column: 3;
   -ms-grid-column-span: 2;
   grid-column: 3 / 5;
 }
 
-.multiple-row {
+.multiple-row{
   -ms-grid-row: 1;
   -ms-grid-row-span: 2;
   grid-row: 1 / 3;
 }
 
-.grid-section h2 {
+.grid-section h2{
   cursor: pointer;
   text-align: center;
   font-weight: lighter;
 }
 
-.box-cont h3 {
+.box-cont h3{
   font-weight: lighter;
   font-size: 2.4vw;
   margin: auto;
 }
 
-.dav-bow-disc-img {
+.dav-bow-disc-img{
   background-image: url("../images/1967_davidbowie_uk.jpg");
   background-size: cover;
 }
 
-.dav-bow-disc-img:hover {
+.dav-bow-disc-img:hover{
   background-size: 150%;
 }
 
-.man-who-img {
+.man-who-img{
   background-image: url("../images/the-man-who-sold-the-world.jpg");
   background-size: cover;
 }
 
-.man-who-img:hover {
+.man-who-img:hover{
   background-size: 120%;
 }
 
-.hunky-dory-img {
+.hunky-dory-img{
   background-image: url("../images/hunky-dory.jpg");
   background-size: cover;
   overflow: hidden;
 }
 
-.hunky-dory-img:hover {
+.hunky-dory-img:hover{
   background-size: 400%;
 }
 
-.young-am-img {
+.young-am-img{
   background-image: url("../images/young-americans.jpg");
   background-size: cover;
 }
 
-.young-am-img:hover {
+.young-am-img:hover{
   background-size: 160%;
 }
 
-.heroes-img {
+.heroes-img{
   background-image: url("../images/1977_heroes.jpg");
   background-size: cover;
 }
 
-.heroes-img:hover {
+.heroes-img:hover{
   background-size: 140%;
 }
 
-.overlay-sixt {
+.overlay-sixt{
   position: absolute;
   content: " ";
   top: 0;
@@ -149,7 +149,7 @@
   background-color: rgba(96, 136, 200, 0.6);
 }
 
-.overlay-sixt:hover {
+.overlay-sixt:hover{
   background-color: rgba(96, 136, 200, 0);
 }
 
@@ -165,7 +165,7 @@
 }
 /* The modal's background */
 
-.modal {
+.modal{
   display: none;
   position: fixed;
   left: 12vw;
@@ -179,19 +179,19 @@
 }
 /* Display the modal when targeted */
 
-.modal:target {
+.modal:target{
   display: table;
   position: fixed;
 }
 /* The modal box */
 
-.modal-dialog {
+.modal-dialog{
   display: table-cell;
   vertical-align: middle;
 }
 /* The modal's content */
 
-.modal-dialog .modal-content {
+.modal-dialog .modal-content{
   margin: auto;
   background-color: #f3f3f3;
   position: relative;
@@ -201,14 +201,11 @@
   text-align: justify;
   width: 80%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  /* Add animation */
-
   animation-name: example;
   animation-duration: 0.5s;
 }
-/* The button used to close the modal */
 
-.modal-closebtn {
+.modal-closebtn{
   text-decoration: none;
   position: relative;
   margin-left: auto;
@@ -218,34 +215,34 @@
 }
 
 .modal-closebtn:hover,
-.modal-closebtn:focus {
+.modal-closebtn:focus{
   color: #000;
   text-decoration: none;
   cursor: pointer;
 }
 
-.modal-container {
+.modal-container{
   padding: 2px 16px 2vh;
   display: flex;
 }
 
-.modal-header {
+.modal-header{
   background-color: #5cb85c;
   font-size: 25px;
   color: white;
 }
 
-.modal li {
+.modal li{
   list-style-type: none;
   margin-bottom: 2vh;
   word-break: normal;
 }
 
-.modal li span {
+.modal li span{
   font-weight: bolder;
 }
 
-.overlay-eight {
+.overlay-eight{
   position: absolute;
   content: " ";
   top: 0;
@@ -257,7 +254,7 @@
   background-color: rgba(241, 7, 54, 0.377);
 }
 
-.invisible {
+.invisible{
   display: -ms-grid;
   display: grid;
   overflow: hidden;
@@ -288,7 +285,7 @@
   }
 }
 
-.visible {
+.visible{
   display: -ms-grid;
   display: grid;
   -webkit-animation: crescendo 0.5s alternate 1 ease-in;
@@ -325,15 +322,12 @@ ul a:hover {
   position: relative;
 }
 
-ul a:hover:after {
+ul a:hover:after{
   content: url(https://upload.wikimedia.org/wikipedia/en/c/cb/Bowie-davidbowie.jpg);
   display: block;
   color: orange;
   display: block;
   position: absolute;
   left: 40vw;
-  /* change this value to one that suits you */
   top: 56px;
 }
-
-/* Disc section end */
