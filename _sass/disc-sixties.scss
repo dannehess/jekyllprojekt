@@ -227,14 +227,21 @@
   background-color: #5cb85c;
   font-size: 25px;
   color: white;
+  word-break: normal;
 }
 
 .modal li {
   list-style-type: none;
   margin-bottom: 2vh;
   word-break: normal;
+  font-weight: 300
 }
 
 .modal li span {
-  font-weight: bolder;
+  font-weight: 400;
+}
+
+.modal li img{
+  width: 75%;
+  height: 75%;
 }
