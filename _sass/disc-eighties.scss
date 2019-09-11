@@ -88,3 +88,48 @@
     transform: rotate(70deg);
   }
 }
+
+.scary-disc-img {
+  background-image: url("../images/1980_scarymonsters.jpg");
+  background-size: cover;
+}
+.scary-disc-img:hover {
+  background-position: center;
+  background-size: cover;
+}
+
+.dance-img {
+  background-image: url("../images/1983_letsdance.jpg");
+  background-size: cover;
+}
+.dance-img:hover {
+  background-position: center;
+  background-size: cover;
+}
+
+.never-let-img {
+  background-image: url("../images/1987_neverletmedown.jpg");
+  background-size: cover;
+}
+.never-let-img:hover {
+  background-position: center;
+  background-size: cover;
+}
+
+.outside-img {
+  background-image: url("../images/1995_1outside.jpg");
+  background-size: cover;
+}
+.outside-img:hover {
+  background-position: center;
+  background-size: cover;
+}
+
+.earthling-img {
+  background-image: url("../images/1997_earthling.jpg");
+  background-size: cover;
+}
+.earthling-img:hover {
+  background-position: center;
+  background-size: cover;
+}
