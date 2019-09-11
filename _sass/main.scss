@@ -616,4 +616,16 @@ footer {
   }
 }
 
+@media (max-width: 850px) {
+
+#merch-heading, .underheading, .disc h1, #biography{
+  text-align: center;
+}
+
+.underheading{
+  padding-left: 0;
+}
+
+}
+
 /*# sourceMappingURL=main.css.map */
