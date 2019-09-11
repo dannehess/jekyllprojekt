@@ -2,12 +2,9 @@ let app = {};
 
 function showDiscFunc(elem) {
   for (let i = 0; i < elem.length; i++) {
-
     if (elem[i].classList.contains("invisible")) {
-     
       elem[i].classList.add("visible");
       elem[i].classList.remove("invisible");
-      
     } else {
       elem[i].classList.remove("visible");
       elem[i].classList.add("invisible");
@@ -27,12 +24,10 @@ let selectMillenTar = document.getElementById("millen-target");
 let selectMillenGrid = document.getElementsByClassName("grid-millen");
 let selectMillenArrow = document.getElementsByClassName("millen-arrow-icon");
 
-
 selectSixtTar.addEventListener(
   "click",
   function() {
-    showDiscFunc(selectSixtGrid),
-    turnArrowFunc(selectSixtArrow)
+    showDiscFunc(selectSixtGrid), turnArrowFunc(selectSixtArrow);
   },
   false
 );
@@ -40,8 +35,7 @@ selectSixtTar.addEventListener(
 selectEightTar.addEventListener(
   "click",
   function() {
-    showDiscFunc(selectEightGrid),
-    turnArrowFunc(selectEightArrow)
+    showDiscFunc(selectEightGrid), turnArrowFunc(selectEightArrow);
   },
   false
 );
@@ -49,8 +43,7 @@ selectEightTar.addEventListener(
 selectMillenTar.addEventListener(
   "click",
   function() {
-    showDiscFunc(selectMillenGrid),
-    turnArrowFunc(selectMillenArrow)
+    showDiscFunc(selectMillenGrid), turnArrowFunc(selectMillenArrow);
   },
   false
 );
@@ -59,8 +52,8 @@ function turnArrowFunc(elem) {
   for (let i = 0; i < elem.length; i++) {
     if (elem[i].classList.contains("open")) {
       elem[i].classList.remove("open");
-  }else{
-    elem[i].classList.add("open");
+    } else {
+      elem[i].classList.add("open");
+    }
   }
-}
 }
