@@ -1,13 +1,17 @@
-@import 'disc';
-@import 'bio';
-@import 'merch';
+@import "disc";
+@import "disc-sixties";
+@import "disc-eighties";
+@import "disc-millen";
+@import "bio";
+@import "merch";
 
 $bowie-blue: #6088c8;
 $bowie-red: #f10736;
 $bowie-pink: #ee3e82;
 
-body, html {
-  font-family: 'Montserrat';
+body,
+html {
+  font-family: "Montserrat";
   margin: 0;
   padding: 0;
   color: #333;
@@ -85,10 +89,11 @@ nav {
   align-items: flex-end;
 }
 
-nav a, .panel li a {
+nav a,
+.panel li a {
   display: inline-block;
   font-size: 1.3rem;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   padding: 10px 10px;
   margin-right: 2px;
   margin-left: 30px;
@@ -100,12 +105,12 @@ nav a, .panel li a {
   transition: background-position 0.4s ease-in-out;
 }
 
-.panel ul{
+.panel ul {
   padding-top: 30px;
   padding-right: 40px;
 }
 
-.panel ul li a{
+.panel ul li a {
   margin-left: 0;
 }
 
@@ -115,22 +120,42 @@ nav a, .panel li a {
 
 nav a:hover {
   background-position: bottom;
-  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(50%, #6088c8), color-stop(50%, transparent));
+  background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    color-stop(50%, #6088c8),
+    color-stop(50%, transparent)
+  );
   background-image: linear-gradient(to top, #6088c8 50%, transparent 50%);
 }
 
 nav a:nth-child(2):hover {
-  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(50%, #f10736), color-stop(50%, transparent));
+  background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    color-stop(50%, #f10736),
+    color-stop(50%, transparent)
+  );
   background-image: linear-gradient(to top, #f10736 50%, transparent 50%);
 }
 
 nav a:nth-child(3):hover {
-  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(50%, #ee3e82), color-stop(50%, transparent));
+  background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    color-stop(50%, #ee3e82),
+    color-stop(50%, transparent)
+  );
   background-image: linear-gradient(to top, #ee3e82 50%, transparent 50%);
 }
 
-#merch::before, #bio::before, #disco::before {
-  content: '';
+#merch::before,
+#bio::before,
+#disco::before {
+  content: "";
   display: block;
   height: 90px;
   margin-top: -90px;
@@ -152,7 +177,7 @@ nav a:nth-child(3):hover {
 }
 
 p {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: #1a1a1d;
   font-size: 1.2rem;
   margin-top: 4px;
@@ -179,7 +204,7 @@ section {
   margin-bottom: 40px;
   background-color: #f9f9f9;
 }
-  
+
 h1 {
   font-size: 3rem;
   line-height: 30px;
@@ -235,7 +260,9 @@ footer {
   text-align: center;
 }
 
-.accordion, .panel, .x {
+.accordion,
+.panel,
+.x {
   display: none;
 }
 
@@ -270,7 +297,7 @@ footer {
   width: 16px;
 }
 
-#smalltopheader{
+#smalltopheader {
   display: none;
   height: 0;
   overflow: hidden;
@@ -282,14 +309,14 @@ footer {
 }
 
 .qfacts {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin: 0em;
   margin-bottom: 10px;
   display: inline-block;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .bioimg {
@@ -375,7 +402,9 @@ footer {
   text-align: center;
 }
 
-.accordion, .panel, .x {
+.accordion,
+.panel,
+.x {
   display: none;
 }
 
@@ -408,7 +437,7 @@ footer {
   width: 16px;
 }
 
-#smalltopheader{
+#smalltopheader {
   display: none;
   background: #fefefe;
   box-shadow: 0 4px 20px -2px rgb(245, 243, 243);
@@ -416,7 +445,7 @@ footer {
   height: 80px;
 }
 
-#smalltopheaderlogo{
+#smalltopheaderlogo {
   position: absolute;
   top: 15px;
   right: 30px;
@@ -424,161 +453,160 @@ footer {
   z-index: 1;
 }
 
-.hidden{
+.hidden {
   overflow: hidden;
 }
 
-.merchandise, .disc{
+.merchandise,
+.disc {
   padding: 20px 40px;
 }
 
 @media (max-width: 1400px) {
+  .underheading {
+    padding-left: 20px;
+    margin-top: 10px;
+  }
 
-.underheading{
-  padding-left: 20px;
-  margin-top: 10px;
-}
+  .left {
+    max-width: 74vw;
+    margin-left: 20px;
+  }
 
-.left {
-  max-width: 74vw;
-  margin-left: 20px;
-}
+  .underheading {
+    margin-left: 0;
+  }
 
-.underheading{
-  margin-left: 0;
-}
+  #smalltopheader {
+    display: block;
+    z-index: 999;
+    position: fixed;
+  }
 
-#smalltopheader{
-  display: block;
-  z-index: 999;
-  position: fixed;
-}
+  #smallziggy {
+    width: 100%;
+  }
 
-#smallziggy {
-  width: 100%;
-}
+  nav {
+    margin-top: 14px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+  }
 
-nav {
-  margin-top: 14px;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-  -webkit-box-align: end;
-  -ms-flex-align: end;
-  align-items: flex-end;
-}
+  nav a {
+    padding: 10px 4px;
+    margin-right: 4px;
+    margin-left: 30px;
+  }
 
-nav a {
-  padding: 10px 4px;
-  margin-right: 4px;
-  margin-left: 30px;
-}
+  .logo {
+    width: 200px;
+    margin-top: 10px;
+  }
 
-.logo {
-  width: 200px;
-  margin-top: 10px;
-}
+  .logotype {
+    width: 100px;
+  }
 
-.logotype {
-  width: 100px;
-}
+  header {
+    width: 72%;
+    padding: 0;
+    margin: 0;
+  }
 
-header {
-  width: 72%;
-  padding: 0;
-  margin: 0;
-}
+  .container {
+    margin: 0;
+    padding: 0;
+  }
 
-.container {
-  margin: 0;
-  padding: 0;
-}
+  .accordion,
+  .x {
+    background: none;
+    cursor: pointer;
+    font-size: 2.4em;
+    text-align: left;
+    position: fixed;
+    background: #fefefe;
+    top: 10px;
+    padding: 8px 8px 10px 12px;
+    left: 10px;
+    line-height: 40px;
+    border: none;
+    outline: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    display: inline-block;
+    z-index: 999;
+  }
 
-.accordion, .x {
-  background: none;
-  cursor: pointer;
-  font-size: 2.4em;
-  text-align: left;
-  position: fixed;
-  background: #fefefe;
-  top: 10px;
-  padding: 8px 8px 10px 12px;
-  left: 10px;
-  line-height: 40px;
-  border: none;
-  outline: none;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-  display: inline-block;
-  z-index: 999;
-}
+  #smalltopheader {
+    z-index: 999;
+  }
 
-#smalltopheader{
-  z-index: 999;
-}
-
-.panel {
-  display: none;
-  overflow: hidden;
-  position: fixed;
-  background: #fefefe;
-  box-shadow: 0 4px 20px -2px rgb(245, 243, 243);
-  padding-top: 40px;
-  margin-bottom: 0;
-  top: 0px;
-  height: auto;
-  z-index: 2;
-}
-
+  .panel {
+    display: none;
+    overflow: hidden;
+    position: fixed;
+    background: #fefefe;
+    box-shadow: 0 4px 20px -2px rgb(245, 243, 243);
+    padding-top: 40px;
+    margin-bottom: 0;
+    top: 0px;
+    height: auto;
+    z-index: 2;
+  }
 }
 
 @media (max-width: 1100px) {
+  main {
+    margin-right: 20px;
+    margin-top: 440px;
+  }
 
-main {
-  margin-right: 20px;
-  margin-top: 440px;
-}
+  .left {
+    max-width: 92vw;
+    padding-left: 0px;
+  }
 
-.left {
-  max-width: 92vw;
-  padding-left: 0px;
-}
+  nav {
+    max-width: 100%;
+    display: none;
+  }
 
-nav {
-  max-width: 100%;
-  display: none;
-}
+  .bowie {
+    display: none;
+  }
 
-.bowie {
-  display: none;
-}
+  .smallheader {
+    background-image: url("../../assets/images/ziggy.jpg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: top -80px right -70px;
+    background-attachment: fixed;
+    width: 100%;
+    height: 416px;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
 
-.smallheader {
-  background-image: url("../../assets/images/ziggy.jpg");
-  background-repeat: no-repeat, no-repeat;
-  background-position: top -80px right -70px;
-  background-attachment: fixed;
-  width: 100%;
-  height: 416px;
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-}
+  .smallheader img {
+    max-width: 100%;
+  }
 
-.smallheader img {
-  max-width: 100%;
-}
-
-header {
-  display: none;
-}
+  header {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

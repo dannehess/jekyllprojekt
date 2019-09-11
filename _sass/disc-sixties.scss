@@ -1,0 +1,234 @@
+#sixt-sevent-target {
+  display: inline-table;
+}
+
+.sixt-arrow-icon {
+  height: 50px;
+  width: 66px;
+  display: block;
+  padding: 0.5em;
+  margin: auto;
+  position: relative;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.sixt-left-bar {
+  text-decoration: none;
+  position: absolute;
+  background-color: transparent;
+  top: 14px;
+  left: 0;
+  width: 40px;
+  height: 10px;
+  display: block;
+  transform: rotate(35deg);
+  float: right;
+  border-radius: 2px;
+  &:after {
+    content: "";
+    background-color: rgb(96, 136, 200);
+    width: 40px;
+    height: 10px;
+    display: block;
+    float: right;
+    border-radius: 6px 10px 10px 6px;
+    transition: all $duration $easing;
+    z-index: -1;
+  }
+}
+
+.sixt-right-bar {
+  position: absolute;
+  background-color: transparent;
+  top: 14px;
+  left: 26px;
+  width: 40px;
+  height: 10px;
+  display: block;
+  transform: rotate(-35deg);
+  float: right;
+  border-radius: 2px;
+  &:after {
+    content: "";
+    background-color: rgb(96, 136, 200);
+    width: 40px;
+    height: 10px;
+    display: block;
+    float: right;
+    border-radius: 10px 6px 6px 10px;
+    transition: all $duration $easing;
+    z-index: -1;
+  }
+}
+
+.open {
+  .sixt-left-bar:after {
+    transform-origin: center center;
+    transform: rotate(-70deg);
+  }
+  .sixt-right-bar:after {
+    transform-origin: center center;
+    transform: rotate(70deg);
+  }
+}
+
+.box-cont h3 {
+  font-weight: lighter;
+  font-size: 2.4vw;
+  margin: auto;
+}
+
+.dav-bow-disc-img {
+  background-image: url("../images/1967_davidbowie_uk.jpg");
+  background-size: cover;
+}
+
+.dav-bow-disc-img:hover {
+  background-size: 150%;
+}
+
+.man-who-img {
+  background-image: url("../images/the-man-who-sold-the-world.jpg");
+  background-size: cover;
+}
+
+.man-who-img:hover {
+  background-size: 120%;
+}
+
+.hunky-dory-img {
+  background-image: url("../images/hunky-dory.jpg");
+  background-size: cover;
+  overflow: hidden;
+}
+
+.hunky-dory-img:hover {
+  background-size: 400%;
+}
+
+.young-am-img {
+  background-image: url("../images/young-americans.jpg");
+  background-size: cover;
+}
+
+.young-am-img:hover {
+  background-size: 160%;
+}
+
+.heroes-img {
+  background-image: url("../images/1977_heroes.jpg");
+  background-size: cover;
+}
+
+.heroes-img:hover {
+  background-size: 140%;
+}
+
+.overlay-sixt {
+  position: absolute;
+  content: " ";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  z-index: 0;
+  background-color: rgba(96, 136, 200, 0.6);
+}
+
+.overlay-sixt:hover {
+  background-color: rgba(96, 136, 200, 0);
+}
+
+@keyframes example {
+  from {
+    top: -100px;
+    opacity: 0;
+  }
+  to {
+    top: 0px;
+    opacity: 1;
+  }
+}
+/* The modal's background */
+
+.modal {
+  display: none;
+  position: fixed;
+  left: 12vw;
+  top: 10vh;
+  width: 60vw;
+  height: 75vh;
+  margin-top: 8vh;
+  overflow: auto;
+  background-color: (rgb(238, 62, 130));
+  background-color: rgba(238, 62, 130, 0.4);
+}
+/* Display the modal when targeted */
+
+.modal:target {
+  display: table;
+  position: fixed;
+}
+/* The modal box */
+
+.modal-dialog {
+  display: table-cell;
+  vertical-align: middle;
+}
+/* The modal's content */
+
+.modal-dialog .modal-content {
+  margin: auto;
+  background-color: #f3f3f3;
+  position: relative;
+  padding: 0;
+  outline: 0;
+  border: 1px #777 solid;
+  text-align: justify;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  /* Add animation */
+
+  animation-name: example;
+  animation-duration: 0.5s;
+}
+/* The button used to close the modal */
+
+.modal-closebtn {
+  text-decoration: none;
+  position: relative;
+  margin-left: auto;
+  font-size: 35px;
+  font-weight: bold;
+  color: pink;
+}
+
+.modal-closebtn:hover,
+.modal-closebtn:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-container {
+  padding: 2px 16px 2vh;
+  display: flex;
+}
+
+.modal-header {
+  background-color: #5cb85c;
+  font-size: 25px;
+  color: white;
+}
+
+.modal li {
+  list-style-type: none;
+  margin-bottom: 2vh;
+  word-break: normal;
+}
+
+.modal li span {
+  font-weight: bolder;
+}
